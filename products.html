@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        body {
+          font-family: Rubik,Arial,sans-serif;
+            font-weight: 400;
+            font-size: 1rem;
+            overflow-x: hidden;
+            color: #607289;
+        }
+        
+        h5 {
+            font-size: 1rem;
+            line-height: 1.375;
+          font-family: Rubik,Arial,sans-serif;
+            font-weight: 500;
+            color: #ececef;
+        }
+        
+        a {
+          color: #818494;
+          font-weight: 500;
+          text-decoration: none;
+          background-color: transparent;
+        }
+        
+        a:hover {
+          color: #dee4ea;
+          text-decoration: none;
+        }
+        
+        footer {
+          background: #13242f;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');:root{--font1: 'Heebo', sans-serif;--font2: 'Fira Sans Extra Condensed', sans-serif;--font3: 'Roboto', sans-serif}body{font-family: var(--font3);background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%)}h2{font-weight: 900}.container-fluid{max-width: 1200px}.card{background: #fff;box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);border: 0;border-radius: 1rem}.card-img, .card-img-top{border-top-left-radius: calc(1rem - 1px);border-top-right-radius: calc(1rem - 1px)}.card h5{overflow: hidden;height: 56px;font-weight: 900;font-size: 1rem}.card-img-top{width: 100%;max-height: 180px;object-fit: contain;padding: 30px}.card h2{font-size: 1rem}.card:hover{transform: scale(1.05);box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06)}.label-top{position: absolute;background-color: #8bc34a;color: #fff;top: 8px;right: 8px;padding: 5px 10px 5px 10px;font-size: .7rem;font-weight: 600;border-radius: 3px;text-transform: uppercase}.top-right{position: absolute;top: 24px;left: 24px;width: 90px;height: 90px;border-radius: 50%;font-size: 1rem;font-weight: 900;background: #ff5722;line-height: 90px;text-align: center;color: white}.top-right span{display: inline-block;vertical-align: middle}@media (max-width: 768px){.card-img-top{max-height: 250px}}.over-bg{background: rgba(53, 53, 53, 0.85);box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);backdrop-filter: blur(0.0px);-webkit-backdrop-filter: blur(0.0px);border-radius: 10px}.btn{font-size: 1rem;font-weight: 500;text-transform: uppercase;padding: 5px 50px 5px 50px}.box .btn{font-size: 1.5rem}@media (max-width: 1025px){.btn{padding: 5px 40px 5px 40px}}@media (max-width: 250px){.btn{padding: 5px 30px 5px 30px}}.btn-warning{background: none #f7810a;color: #ffffff;fill: #ffffff;border: none;text-decoration: none;outline: 0;box-shadow: -1px 6px 19px rgba(247, 129, 10, 0.25);border-radius: 100px}.btn-warning:hover{background: none #ff962b;color: #ffffff;box-shadow: -1px 6px 13px rgba(255, 150, 43, 0.35)}.bg-success{font-size: 1rem;background-color: #f7810a !important}.bg-danger{font-size: 1rem}.price-hp{font-size: 1rem;font-weight: 600;color: darkgray}.amz-hp{font-size: .7rem;font-weight: 600;color: darkgray}.fa-question-circle:before{color: darkgray}.fa-plus:before{color: darkgray}.box{border-radius: 1rem;background: #fff;box-shadow: 0 6px 10px rgb(0 0 0 / 8%), 0 0 6px rgb(0 0 0 / 5%);transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12)}.box-img{max-width: 300px}.thumb-sec{max-width: 300px}@media (max-width: 576px){.box-img{max-width: 200px}.thumb-sec{max-width: 200px}}.inner-gallery{width: 60px;height: 60px;border: 1px solid #ddd;border-radius: 3px;margin: 1px;display: inline-block;overflow: hidden;-o-object-fit: cover;object-fit: cover}@media (max-width: 370px){.box .btn{padding: 5px 40px 5px 40px;font-size: 1rem}}.disclaimer{font-size: .9rem;color: darkgray}.related h3{font-weight: 900}footer{background: #212529;height: 80px;color: #fff}
+  
+        .rating-pill {
+          display: inline-block;
+          padding: 0.5em 1em;
+          background-color: #ffe66d;
+          border-radius: 2em;
+          font-size: 1.2em;
+          font-weight: bold;
+          color: #333;
+          text-align: center;
+        }
+        
+        @media (max-width: 600px) {
+          .rating-pill {
+            font-size: 1em;
+          }
+        }
+      </style>
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <section>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary mx-auto">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="img/logo.png" height="45px" width="60px" alt="BR-logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Groceries</a></li>
+                    <li><a class="dropdown-item" href="#">Household Products</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Personal Care</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li>
+              </ul>
+              <form class="d-flex ms-auto" role="search">
+                <input class="form-control me-2 ml-20" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </section>    
+    <!-- NAVBAR Ends -->
+  
+    <!-- Products starts -->
+ 
+  <div class="container-fluid bg-trasparent my-4 p-3" style="position: relative;"> 
+    <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3"> 
+        <div class="col"> <div class="card h-100 shadow-sm" id="Harpic"> 
+    <img src="img/product1.webp" class="card-img-top" alt="..."> 
+    <div class="card-body"> <div class="clearfix mb-3"> 
+        <span class="float-start badge rounded-pill bg-primary fs-5">Harpic</span> 
+        <span class="float-end price-hp fs-4">40&#8377;</span> 
+    </div> 
+    <h5 class="card-title">Disinfectant toilet Cleaner Liquid.Toilet Cleaner,Disinfectant,Original</h5>
+    <p class="card-text rating-pill ">4.5 &#x2605;</p>
+    <p>11201 Ratings</p>
+    <div class="d-grid gap-2 my-4">
+      <a href="#" class="btn btn-primary">Add to cart</a>
+      <a href="#" class="btn btn-light">Buy Now</a>
+</div> 
+</div> 
+</div> 
+        </div>
+        <div class="col"> <div class="card h-100 shadow-sm"> 
+          <img src="img/product3.webp" class="card-img-top" alt="..."> 
+          <div class="card-body"> <div class="clearfix mb-3"> 
+              <span class="float-start badge rounded-pill bg-primary fs-4">gillette</span> 
+              <span class="float-end price-hp fs-4">997&#8377;</span> 
+          </div> 
+          <h5 class="card-title">Gillette Mach 3 Bladed Shaving Cartridges/Razor - With Lubrication Strip, Protects Skin, 10 pcs</h5>
+          <p class="card-text rating-pill ">4.6 &#x2605;</p>
+          <p>11201 Ratings</p>
+          <div class="d-grid gap-2 my-4">
+            <a href="#" class="btn btn-primary">Add to cart</a>
+            <a href="#" class="btn btn-light">Buy Now</a>
+      </div> 
+      </div> 
+      </div> 
+              </div>
+ 
+              <div class="col"> <div class="card h-100 shadow-sm"> 
+                <img src="img/product2.webp" class="card-img-top" alt="..."> 
+                <div class="card-body"> <div class="clearfix mb-3"> 
+                    <span class="float-start badge rounded-pill bg-primary fs-4">Surf Excel</span> 
+                    <span class="float-end price-hp fs-4">905&#8377;</span> 
+                </div> 
+                <h5 class="card-title">Surf Excel Matic Detergent Powder - Front Load, 4 kg  Remove Tough Stains in Machines</h5>
+                <p class="card-text rating-pill ">4.4&#x2605;</p>
+                <p>11201 Ratings</p>
+                <div class="d-grid gap-2 my-4">
+                  <a href="#" class="btn btn-primary">Add to cart</a>
+                  <a href="#" class="btn btn-light">Buy Now</a>
+            </div> 
+            </div> 
+            </div> 
+                    </div>
+
+
+                    <div class="col"> <div class="card h-100 shadow-sm"> 
+                      <img src="img/product4.webp" class="card-img-top" alt="..."> 
+                      <div class="card-body"> <div class="clearfix mb-3"> 
+                          <span class="float-start badge rounded-pill bg-primary fs-4">Tata Tea</span> 
+                          <span class="float-end price-hp fs-4">744&#8377;</span> 
+                      </div> 
+                      <h5 class="card-title">Tata Tea Gold Tea, 1.5 Kg</h5>
+                      <p class="card-text rating-pill  ">4.5 &#x2605;</p>
+                      <p>11201 Ratings</p>
+                      <div class="d-grid gap-2 my-4">
+                        <a href="#" class="btn btn-primary">Add to cart</a>
+                        <a href="#" class="btn btn-light">Buy Now</a>
+                  </div> 
+                  </div> 
+                  </div> 
+                          </div>
+                          <div class="col"> <div class="card h-100 shadow-sm"> 
+                            <img src="img/product4.webp" class="card-img-top" alt="..."> 
+                            <div class="card-body"> <div class="clearfix mb-3"> 
+                                <span class="float-start badge rounded-pill bg-primary fs-4">Tata Tea</span> 
+                                <span class="float-end price-hp fs-4">744&#8377;</span> 
+                            </div> 
+                            <h5 class="card-title">Tata Tea Gold Tea, 1.5 Kg</h5>
+                            <p class="card-text rating-pill  ">4.5 &#x2605;</p>
+                            <p>11201 Ratings</p>
+                            <div class="d-grid gap-2 my-4">
+                              <a href="#" class="btn btn-primary">Add to cart</a>
+                              <a href="#" class="btn btn-light">Buy Now</a>
+                        </div> 
+                        </div> 
+                        </div> 
+                                </div>
+                                <div class="col"> <div class="card h-100 shadow-sm"> 
+                                    <img src="img/product4.webp" class="card-img-top" alt="..."> 
+                                    <div class="card-body"> <div class="clearfix mb-3"> 
+                                        <span class="float-start badge rounded-pill bg-primary fs-4">Tata Tea</span> 
+                                        <span class="float-end price-hp fs-4">744&#8377;</span> 
+                                    </div> 
+                                    <h5 class="card-title">Tata Tea Gold Tea, 1.5 Kg</h5>
+                                    <p class="card-text rating-pill  ">4.5 &#x2605;</p>
+                                    <p>11201 Ratings</p>
+                                    <div class="d-grid gap-2 my-4">
+                                      <a href="#" class="btn btn-primary">Add to cart</a>
+                                      <a href="#" class="btn btn-light">Buy Now</a>
+                                </div> 
+                                </div> 
+                                </div> 
+                                        </div>
+  </div>
+  </div>
+
+  <!-- products end -->
+
+   <!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Kalghatgi general merchants
+            </h6>
+            <p>
+              
+  Welcome to our cherished establishment, a cornerstone of Belgaum since 1990! We take immense pride in being your go-to destination for quality tea powders and a comprehensive range of groceries. As a general merchant shop deeply rooted in the heart of Belgaum, we have been serving our community with dedication and passion for over three decades.
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Products
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Tea powders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Pulses and grains</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">All types of Masalas</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Oils</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Pricing</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Settings</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Orders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3"></i> 944,Market,Belgaum,590002</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              Kalghatgirajesh@gmail.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> 0831-2428177</p>
+            <p><i class="fas fa-print me-3"></i> +91-9480565070</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(221, 24, 24, 0.05);">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Kalghatgi-Co.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
